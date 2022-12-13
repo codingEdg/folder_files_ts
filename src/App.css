@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+
+.folder{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 10px;
+    width: 500px;
+    background-color: rgb(233,233,233);
+    border-radius: 10px;
+}
+
+.file{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 5px;
+    padding-left: 5px;
+
+}
+
+.input_container{
+    display: flex;
+    align-items: center;
+    gap : 5px;
+    padding-left: 20px;
+}
+
+.input_container > span{
+    margin-top: 5px;
+}
+
+.input_container__input{
+    margin : 6px 0 0px 0;
+    padding : 5px;  
+    display: flex;
+    border: 1px solid lightgray;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
