@@ -1,0 +1,36 @@
+.pages-nums{
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+    
+}
+
+.pages-nums:hover{
+    font-size: 26px;
+    font-weight: bold;
+    color: green;
+}
+
+
+
+.pages{
+    display: flex;
+}
+
+.clicked{
+    color: blue;
+    font-size: 26px;
+}
+
+.prev_next{
+    color: purple;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.prev_next:hover{
+    color: white;
+    background-color: purple;
+    font-size: 30px;
+    cursor: pointer;
+}

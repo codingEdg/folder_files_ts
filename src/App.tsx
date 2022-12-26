@@ -1,32 +1,22 @@
-import React, {useState} from 'react'
-import "./App.css"
-import Folder from './components/Folder'
-import { structure } from './data/json_data'
-import useTraverseTree from './hooks/use_traverse_hook'
-import { Structure } from './interfaces_types/interfaces'
+import React, { useState } from "react";
+// import UsingLocalStorage from "./hooks/UsingLocalStorage";
+// import ShowEventListeners from "./hooks/ShowEventListeners";
+import Test1 from "./warmUp/Test1";
+// import {File_Explorer} from './all_apps/File_Explorer'
+// import Fetch_API from "./all_apps/fetch_api_like_google/Fetch_API";
+// import ShowApi from "./hooks/ShowApi";
+
 const App = () => {
-    const [explorerData, setExplorerData] = useState(structure)
-
-    const { insertNode } = useTraverseTree()
-
-    const handleInsertNode =( folderId:string, item : string, isFolder : boolean | null ) :Structure => {
-        if(isFolder!==null){
-
-            const finalTree = insertNode(explorerData, folderId, item, isFolder )
-    
-           setExplorerData(finalTree)
-           return finalTree
-        }else {
-          return  explorerData
-        }
-
-    }
-  
   return (
-    <div className='main_app'>
-      <Folder handleInsertNode={handleInsertNode} explorer = {explorerData} />
+    <div className="main_app">
+      {/* <File_Explorer /> */}
+      {/* <Fetch_API /> */}
+      {/* <ShowApi /> */}
+      <Test1 />
+      {/* <ShowEventListeners /> */}
+      {/* <UsingLocalStorage /> */}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -41,3 +41,8 @@ body {
     cursor: pointer;
     justify-content: space-between;
 }
+
+.shit{
+    display: flex;
+    cursor: pointer;
+}
